@@ -89,15 +89,15 @@
         padding: 4px 2px;
         font: inherit;
         font-size: 13px;
-        letter-spacing: 0.08em;
+        letter-spacing: 0.02em;
         text-transform: uppercase;
-        color: #777777;
+        color: rgba(36, 113, 163, 0.6);
         cursor: pointer;
       }
-      .tab:hover { color: #111111; text-decoration: underline; }
+      .tab:hover { color: #2471A3; text-decoration: underline; }
       .tab:focus-visible { outline: 1px solid #111111; outline-offset: 3px; }
       .tab[aria-selected="true"] {
-        color: #111111;
+        color: #2471A3;
         text-decoration: underline;
         text-underline-offset: 4px;
       }
@@ -112,10 +112,10 @@
         margin: 0 0 8px;
         font-size: 20px;
         font-weight: 400;
-        letter-spacing: 0.1em;
+        letter-spacing: 0.02em;
         text-transform: uppercase;
         text-align: center;
-        color: #111111;
+        color: rgba(36, 113, 163, 0.6);
       }
       .placeholder-note {
         margin: 36px auto 56px;
@@ -123,7 +123,7 @@
         text-align: center;
         font-size: 15px;
         font-style: italic;
-        color: #777777;
+        color: rgba(36, 113, 163, 0.6);
       }
 
       /* Contact: one row of small icon tags */
@@ -179,8 +179,8 @@
       .chip-group-label {
         margin: 0;
         font-size: 12px;
-        color: #999999;
-        letter-spacing: 0.08em;
+        color: rgba(36, 113, 163, 0.6);
+        letter-spacing: 0.02em;
       }
       .chip-group .chips { padding-top: 0; }
       .chip-qr {
@@ -201,7 +201,7 @@
         padding: 28px 0 40px;
         margin-top: 56px;
         font-size: 13px;
-        color: #999999;
+        color: rgba(36, 113, 163, 0.6);
       }
       .site-footer p { margin: 0; flex: 1; text-align: center; }
 
