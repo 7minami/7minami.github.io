@@ -159,14 +159,15 @@
 
       /* Footer */
       .site-footer {
+        display: flex;
+        align-items: center;
         border-top: 1px solid #dddddd;
         padding: 28px 0 40px;
         margin-top: 56px;
-        text-align: center;
         font-size: 13px;
         color: #999999;
       }
-      .site-footer p { margin: 0; }
+      .site-footer p { margin: 0; flex: 1; text-align: center; }
 
       @media (max-width: 640px) {
         .wrap { padding: 0 20px; }
