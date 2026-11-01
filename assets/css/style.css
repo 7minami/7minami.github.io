@@ -34,6 +34,11 @@
         text-transform: uppercase;
         color: #111111;
       }
+      .site-tagline {
+        margin: 12px 0 0;
+        font-size: 15px;
+        color: #777777;
+      }
 
       /* Layout: left sidebar + content */
       .layout {
