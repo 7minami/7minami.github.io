@@ -155,15 +155,10 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        padding: 10px;
-        border: 1px solid #dddddd;
-        border-radius: 999px;
-        background: #ffffff;
         line-height: 1;
         color: #111111;
         text-decoration: none;
       }
-      a.chip:hover { border-color: #111111; }
       a.chip:focus-visible { outline: 1px solid #111111; outline-offset: 3px; }
       .chip-icon { display: inline-flex; align-items: center; line-height: 1; color: #111111; } .chip-icon svg { display: block; width: 20px; height: 20px; flex: none; }
       .chip-icon--instagram { color: #FF0069; }
