@@ -173,8 +173,10 @@
       /* Elsewhere groups */
       .chip-groups {
         display: flex;
-        flex-direction: column;
-        gap: 30px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px 40px;
         padding-top: 36px;
       }
       .chip-group {
