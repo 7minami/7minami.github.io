@@ -63,12 +63,6 @@
         align-items: flex-start;
         gap: 14px;
       }
-      .jump-to-label {
-        font-size: 13px;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        color: #999999;
-      }
       .tab {
         appearance: none;
         background: none;
