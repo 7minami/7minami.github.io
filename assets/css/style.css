@@ -39,6 +39,13 @@
         font-size: 15px;
         color: #777777;
       }
+      .site-tagline-cn {
+        display: inline-block;
+        background: linear-gradient(90deg, #ff8fab, #ffb27a, #ffd93d, #6fddbe, #7ac7f5, #b39ddb);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
       .site-tagline-en {
         margin-top: 4px;
         font-size: 13px;
