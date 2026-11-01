@@ -39,6 +39,10 @@
         font-size: 15px;
         color: #777777;
       }
+      .site-tagline-en {
+        margin-top: 4px;
+        font-size: 13px;
+      }
 
       /* Layout: left sidebar + content */
       .layout {
