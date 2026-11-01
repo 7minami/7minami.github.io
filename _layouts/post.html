@@ -1,0 +1,12 @@
+---
+layout: page
+---
+<article class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <p class="post-meta">{{ page.date | date: "%Y-%m-%d" }}</p>
+  <div class="post-body">
+    {{ content }}
+  </div>
+  <!-- Giscus 评论待装：第一篇文章跑通后在此处接入 -->
+  <p class="back-link"><a href="{{ '/blog/' | relative_url }}">← 全部文章</a></p>
+</article>

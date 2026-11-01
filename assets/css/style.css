@@ -1,0 +1,179 @@
+      * { box-sizing: border-box; }
+      html {
+        color-scheme: light;
+      }
+      body {
+        margin: 0;
+        background: #ffffff;
+        color: #111111;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        -webkit-font-smoothing: antialiased;
+      }
+      a { color: #333333; }
+      a:visited { color: #333333; }
+
+      .wrap {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 0 32px;
+      }
+
+      /* Header */
+      .site-header {
+        padding-top: 44px;
+        text-align: center;
+      }
+      .site-title {
+        margin: 0;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 1.15;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #111111;
+      }
+
+      /* JUMP TO directory / tabs */
+      .jump-to {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 28px;
+        margin-top: 30px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid #dddddd;
+      }
+      .jump-to-label {
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #999999;
+      }
+      .tab {
+        appearance: none;
+        background: none;
+        border: none;
+        padding: 4px 2px;
+        font: inherit;
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #777777;
+        cursor: pointer;
+      }
+      .tab:hover { color: #111111; text-decoration: underline; }
+      .tab:focus-visible { outline: 1px solid #111111; outline-offset: 3px; }
+      .tab[aria-selected="true"] {
+        color: #111111;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+
+      /* Panels (only one visible at a time) */
+      .panel {
+        padding-top: 56px;
+        scroll-margin-top: 24px;
+      }
+      .panel[hidden] { display: none; }
+      .section-title {
+        margin: 0 0 8px;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #111111;
+      }
+      .placeholder-note {
+        margin: 36px auto 56px;
+        max-width: 560px;
+        text-align: center;
+        font-size: 15px;
+        font-style: italic;
+        color: #777777;
+      }
+
+      /* Contact: one row of small icon tags */
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 14px 12px;
+        max-width: 900px;
+        margin: 0 auto;
+        padding-top: 36px;
+      }
+      .chip-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border: 1px solid #dddddd;
+        border-radius: 999px;
+        background: #ffffff;
+        line-height: 1;
+        color: #111111;
+        text-decoration: none;
+      }
+      a.chip:hover { border-color: #111111; }
+      a.chip:focus-visible { outline: 1px solid #111111; outline-offset: 3px; }
+      .chip-icon { display: inline-flex; align-items: center; line-height: 1; color: #111111; } .chip-icon svg { display: block; width: 20px; height: 20px; flex: none; }
+      .chip-icon--instagram { color: #FF0069; }
+      .chip-icon--xiaohongshu { color: #FF2442; }
+      .chip-icon--youtube { color: #FF0000; }
+      .chip-icon--bilibili { color: #00A1D6; }
+      .chip-icon--douban { color: #2E963D; }
+      .chip-icon--telegram { color: #26A5E4; }
+      .chip-icon--wechat { color: #07C160; }
+      .chip-qr {
+        display: block;
+        width: 140px;
+        max-width: 100%;
+        height: auto;
+        margin-top: 12px;
+        border: none;
+        box-shadow: none;
+      }
+
+      /* Footer */
+      .site-footer {
+        border-top: 1px solid #dddddd;
+        padding: 28px 0 40px;
+        margin-top: 56px;
+        text-align: center;
+        font-size: 13px;
+        color: #999999;
+      }
+      .site-footer p { margin: 0; }
+
+      @media (max-width: 640px) {
+        .wrap { padding: 0 20px; }
+        .site-header { padding-top: 32px; }
+        .site-title { font-size: 28px; }
+        .panel { padding-top: 40px; }
+      }
+    
+/* Blog */
+.post-list { list-style: none; margin: 36px auto 0; padding: 0; max-width: 640px; }
+.post-list li { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 10px 0; border-bottom: 1px solid #eeeeee; font-size: 15px; }
+.post-list a { color: #111111; text-decoration: none; }
+.post-list a:hover { text-decoration: underline; }
+.post-date { flex: none; font-size: 13px; color: #999999; }
+.more-link { margin: 28px auto 56px; max-width: 640px; text-align: center; font-size: 14px; }
+.post { max-width: 680px; margin: 0 auto; padding-top: 56px; }
+.post-title { margin: 0 0 8px; font-size: 26px; font-weight: 400; letter-spacing: 0.04em; text-align: center; color: #111111; }
+.post-meta { margin: 0 0 36px; text-align: center; font-size: 13px; color: #999999; }
+.post-body { font-size: 16px; line-height: 1.8; }
+.post-body h2, .post-body h3 { font-weight: 400; letter-spacing: 0.04em; }
+.post-body img { max-width: 100%; height: auto; }
+.back-link { margin: 48px auto 0; max-width: 680px; font-size: 14px; }
+.back-link a { color: #777777; }

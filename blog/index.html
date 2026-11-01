@@ -1,0 +1,17 @@
+---
+layout: page
+title: 博客
+---
+<section class="panel">
+  <h2 class="section-title">博客</h2>
+  {% if site.posts.size > 0 %}
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span></li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="placeholder-note">占位文字 — 博客内容以后替换。</p>
+  {% endif %}
+  <p class="more-link"><a href="{{ '/' | relative_url }}">← 返回首页</a></p>
+</section>

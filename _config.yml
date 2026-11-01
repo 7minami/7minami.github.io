@@ -1,0 +1,8 @@
+title: G.elsevale
+description: "An ongoing collection of imagined things."
+baseurl: ""
+url: "https://7minami.github.io"
+markdown: kramdown
+permalink: /blog/:title/
+exclude:
+  - README.md
