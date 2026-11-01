@@ -32,8 +32,8 @@
           });
         });
 
-        // Default view: Elsewhere (the last directory entry, holding all accounts).
-        var defaultTab = document.getElementById('tab-contact');
+        // Default view: Elsewhere.
+        var defaultTab = document.getElementById('tab-elsewhere');
         tabs.forEach(function (t) { t.tabIndex = t === defaultTab ? 0 : -1; });
       })();
     
