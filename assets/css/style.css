@@ -47,21 +47,11 @@
       .site-tagline {
         margin: 0;
         font-size: 13px;
-        color: #777777;
-      }
-      .site-tagline-cn {
-        background: linear-gradient(90deg, #ff8fab, #ffb27a, #ffd93d, #6fddbe, #7ac7f5, #b39ddb);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
+        color: #7AC7F5;
       }
       .site-tagline-en {
         margin-top: 4px;
         font-size: 12px;
-        background: linear-gradient(90deg, #ff8fab, #ffb27a, #ffd93d, #6fddbe, #7ac7f5, #b39ddb);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
       }
 
       /* Layout: left sidebar + content */
@@ -215,40 +205,29 @@
       }
       .site-footer p { margin: 0; flex: 1; text-align: center; }
 
-      /* Floating jelly beans (decorative only) */
-      .beans { position: absolute; inset: 0; pointer-events: none; }
-      .bean {
+      /* Tiny sparkles near the header (decorative only) */
+      .sparkles { position: absolute; inset: 0; pointer-events: none; }
+      .sparkle {
         position: absolute;
         display: block;
-        width: 26px;
-        height: 15px;
-        border-radius: 999px;
-        box-shadow: inset -3px -3px 0 rgba(0, 0, 0, 0.05);
-        animation: bean-float 7s ease-in-out infinite alternate;
+        border-radius: 50%;
         pointer-events: none;
+        animation: sparkle-twinkle 4s ease-in-out infinite alternate;
       }
-      .bean::after {
-        content: "";
-        position: absolute;
-        top: 3px;
-        left: 6px;
-        width: 7px;
-        height: 3px;
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.75);
-      }
-      .bean--straw { background: #F2A3B6; }
-      .bean--mint { background: #86D3B4; }
-      .bean--lav { background: #B9A6EA; }
-      .bean-1 { top: 20px; right: 200px; transform: rotate(-24deg); }
-      .bean-2 { top: 320px; left: 4px; width: 20px; height: 12px; transform: rotate(32deg); animation-duration: 9s; }
-      .bean-3 { bottom: 120px; right: 6%; width: 18px; height: 11px; transform: rotate(18deg); animation-duration: 8s; }
-      @keyframes bean-float {
-        from { translate: 0 0; }
-        to { translate: 0 -7px; }
+      .sparkle--straw { background: #F2A3B6; }
+      .sparkle--mint { background: #86D3B4; }
+      .sparkle--lav { background: #B9A6EA; }
+      .sparkle--lemon { background: #EBCF5C; }
+      .sparkle-1 { top: 30px; right: 320px; width: 8px; height: 8px; }
+      .sparkle-2 { top: 16px; right: 120px; width: 6px; height: 6px; animation-duration: 5s; }
+      .sparkle-3 { top: 84px; right: 240px; width: 7px; height: 7px; animation-duration: 3.5s; }
+      .sparkle-4 { top: 26px; left: 300px; width: 6px; height: 6px; animation-duration: 4.5s; }
+      @keyframes sparkle-twinkle {
+        from { opacity: 0.45; translate: 0 0; }
+        to { opacity: 1; translate: 0 -3px; }
       }
       @media (prefers-reduced-motion: reduce) {
-        .bean { animation: none; }
+        .sparkle { animation: none; }
       }
 
       @media (max-width: 640px) {
@@ -260,9 +239,9 @@
         .jump-to { position: static; flex: none; flex-direction: row; flex-wrap: wrap; align-items: baseline; justify-content: center; gap: 10px 28px; padding-bottom: 18px; border-bottom: 1px solid #dddddd; }
         .tablist { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 10px 28px; }
         .panel { padding-top: 40px; }
-        .bean-1 { top: 44px; right: 16px; }
-        .bean-2 { display: none; }
-        .bean-3 { bottom: 110px; right: 8%; }
+        .sparkle-1 { top: 22px; right: 90px; }
+        .sparkle-2 { top: 14px; right: 24px; }
+        .sparkle-3, .sparkle-4 { display: none; }
       }
     
 /* Blog */
