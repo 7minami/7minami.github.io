@@ -22,8 +22,11 @@
 
       /* Header */
       .site-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
         padding-top: 44px;
-        text-align: center;
       }
       .site-title {
         margin: 0;
@@ -34,9 +37,13 @@
         text-transform: uppercase;
         color: #111111;
       }
+      .site-tagline-wrap {
+        flex: none;
+        text-align: right;
+      }
       .site-tagline {
-        margin: 12px 0 0;
-        font-size: 15px;
+        margin: 0;
+        font-size: 13px;
         color: #777777;
       }
       .site-tagline-cn {
@@ -48,7 +55,7 @@
       }
       .site-tagline-en {
         margin-top: 4px;
-        font-size: 13px;
+        font-size: 12px;
       }
 
       /* Layout: left sidebar + content */
@@ -187,8 +194,9 @@
 
       @media (max-width: 640px) {
         .wrap { padding: 0 20px; }
-        .site-header { padding-top: 32px; }
+        .site-header { padding-top: 32px; flex-direction: column; align-items: flex-start; gap: 8px; }
         .site-title { font-size: 28px; }
+        .site-tagline-wrap { text-align: left; }
         .layout { flex-direction: column; gap: 0; margin-top: 24px; }
         .jump-to { position: static; flex: none; flex-direction: row; flex-wrap: wrap; align-items: baseline; justify-content: center; gap: 10px 28px; padding-bottom: 18px; border-bottom: 1px solid #dddddd; }
         .tablist { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 10px 28px; }
