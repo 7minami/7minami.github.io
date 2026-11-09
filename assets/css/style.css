@@ -162,6 +162,7 @@
       .chip-icon--github { color: #181717; }
       .chip-icon--spotify { color: #1DB954; }
       .chip-icon--email { color: #2563EB; }
+      .chip-icon--ebook { color: #7C3AED; }
       /* Elsewhere groups */
       .chip-groups {
         display: flex;
