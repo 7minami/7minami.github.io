@@ -162,7 +162,6 @@
       .chip-icon--github { color: #181717; }
       .chip-icon--spotify { color: #1DB954; }
       .chip-icon--email { color: #2563EB; }
-      .chip-icon--ebook { color: #7C3AED; }
       /* Elsewhere groups */
       .chip-groups {
         display: flex;
@@ -262,3 +261,15 @@
 .post-body img { max-width: 100%; height: auto; }
 .back-link { margin: 48px auto 0; max-width: 680px; font-size: 14px; }
 .back-link a { color: #777777; }
+
+/* Work */
+.work-list { max-width: 640px; margin: 36px auto 56px; text-align: center; }
+.work-group-title { margin: 0 0 24px; font-size: 12px; font-weight: 400; letter-spacing: 0.02em; text-transform: uppercase; color: rgba(36, 113, 163, 0.6); }
+.work-cover { display: block; width: 220px; max-width: 80%; height: auto; margin: 0 auto 24px; }
+.work-title { margin: 0 0 8px; font-size: 22px; font-weight: 400; letter-spacing: 0.04em; }
+.work-meta { margin: 0 0 16px; font-size: 14px; color: #777777; }
+.work-desc { margin: 0 0 16px; font-size: 15px; }
+.work-links { margin: 0; font-size: 14px; }
+.work-links a { color: #2471A3; }
+.work-links a .dl-icon { vertical-align: -2px; margin-right: 5px; }
+.work-link-sep { margin: 0 8px; color: #999999; }
