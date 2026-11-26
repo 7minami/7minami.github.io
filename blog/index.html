@@ -16,7 +16,7 @@ title: Blog
 </style>
 <section class="panel">
   <h2 class="section-title">Blog</h2>
-  <p class="write-link"><a href="https://github.com/7minami/7minami.github.io/new/main/_posts?filename=2026-11-26-.md&amp;value=---%0Alayout%3A+post%0Atitle%3A+%22%22%0Adate%3A+2026-11-26%0A---%0A%0A" title="在 GitHub 上新建一篇文章（文件名：年-月-日-标题.md）">✎ 写文章</a></p>
+  <p class="write-link"><a href="https://github.com/7minami/blog-drafts/new/main/_drafts?value=---%0Atitle%3A+%22%22%0Adate%3A+2026-11-26%0A---%0A%0A" title="在草稿仓新建一篇草稿（写完移到 _posts，再点 Actions 发布）">✎ 写文章</a></p>
   {% if site.posts.size > 0 %}
   <ol class="timeline">
     {% for post in site.posts %}
@@ -29,7 +29,7 @@ title: Blog
     {% endfor %}
   </ol>
   {% else %}
-  <p class="placeholder-note">还没有文章 — 点上面“写文章”发第一篇，时间线就从这里开始。</p>
+  <p class="placeholder-note">还没有文章 — 点上面“写文章”去草稿仓写第一篇，时间线就从这里开始。</p>
   {% endif %}
   <p class="more-link"><a href="{{ "/" | relative_url }}">← 返回首页</a></p>
 </section>
