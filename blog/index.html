@@ -2,16 +2,34 @@
 layout: page
 title: Blog
 ---
+<style>
+.timeline { list-style: none; margin: 36px auto 0; padding: 0 0 0 20px; max-width: 640px; border-left: 1px solid #dddddd; }
+.timeline-item { position: relative; padding: 0 0 28px 24px; }
+.timeline-dot { position: absolute; left: -25px; top: 8px; width: 9px; height: 9px; border-radius: 50%; background: #7AC7F5; }
+.timeline-date { margin: 0 0 4px; font-size: 13px; color: #2471A3; letter-spacing: 0.05em; }
+.timeline-title { margin: 0 0 6px; font-size: 18px; font-weight: 400; }
+.timeline-title a { color: #111111; text-decoration: none; }
+.timeline-title a:hover { text-decoration: underline; }
+.timeline-excerpt { margin: 0; font-size: 14px; color: #777777; }
+.write-link { margin: 8px auto 56px; max-width: 640px; text-align: center; font-size: 14px; }
+.write-link a { color: #2471A3; }
+</style>
 <section class="panel">
   <h2 class="section-title">Blog</h2>
+  <p class="write-link"><a href="https://github.com/7minami/7minami.github.io/new/main/_posts?filename=2026-11-26-.md&amp;value=---%0Alayout%3A+post%0Atitle%3A+%22%22%0Adate%3A+2026-11-26%0A---%0A%0A" title="在 GitHub 上新建一篇文章（文件名：年-月-日-标题.md）">✎ 写文章</a></p>
   {% if site.posts.size > 0 %}
-  <ul class="post-list">
+  <ol class="timeline">
     {% for post in site.posts %}
-    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span></li>
+    <li class="timeline-item">
+      <span class="timeline-dot" aria-hidden="true"></span>
+      <p class="timeline-date">{{ post.date | date: "%Y-%m-%d" }}</p>
+      <h3 class="timeline-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      {% if post.excerpt %}<p class="timeline-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>{% endif %}
+    </li>
     {% endfor %}
-  </ul>
+  </ol>
   {% else %}
-  <p class="placeholder-note">占位文字 — 博客内容以后替换。</p>
+  <p class="placeholder-note">还没有文章 — 点上面“写文章”发第一篇，时间线就从这里开始。</p>
   {% endif %}
-  <p class="more-link"><a href="{{ '/' | relative_url }}">← 返回首页</a></p>
+  <p class="more-link"><a href="{{ / | relative_url }}">← 返回首页</a></p>
 </section>
