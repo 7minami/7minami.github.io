@@ -273,3 +273,8 @@
 .work-links a { color: #2471A3; }
 .work-links a .dl-icon, .work-links a .db-icon { vertical-align: -2px; margin-right: 5px; }
 .work-link-sep { margin: 0 8px; color: #999999; }
+
+/* Poem posts */
+.poem { font-family: "Kaiti SC", "KaiTi", "STKaiti", "楷体", "Kaiti TC", serif; text-align: center; }
+.poem img { display: block; margin: 24px auto; }
+.poem-date { text-align: right; margin-top: 1.5em; }
